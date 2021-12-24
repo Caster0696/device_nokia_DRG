@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/ancient_DRG.mk
+    $(LOCAL_DIR)/dot_DRG.mk
 
 COMMON_LUNCH_CHOICES := \
-    ancient_DRG-eng \
-    ancient_DRG-user \
-    ancient_DRG-userdebug
+    dot_DRG-eng \
+    dot_DRG-user \
+    dot_DRG-userdebug

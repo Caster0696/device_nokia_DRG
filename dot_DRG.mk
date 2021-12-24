@@ -18,8 +18,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/ancient/config/common_full_phone.mk)
+# Inherit some common dot stuff
+$(call inherit-product, vendor/dot/config/common.mk)
 
 # Inherit from DRG device
 $(call inherit-product, device/nokia/DRG/device.mk)
@@ -30,13 +30,11 @@ $(call inherit-product, device/nokia/sdm660-common/sdm660.mk)
 # Set Shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 
-#ancient os 
-ANCIENT_OFFICIAL=true
-
 # Inherit some common aosp stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 IS_PHONE := true
+WITH_GAPPS := true
 
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
@@ -52,7 +50,7 @@ TARGET_OTA_ASSERT_DEVICE := DRG,DRG_sprout,Dragon
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
 
-PRODUCT_NAME := ancient_DRG
+PRODUCT_NAME := dot_DRG
 PRODUCT_DEVICE := DRG
 PRODUCT_MANUFACTURER := HMD Global
 PRODUCT_BRAND := Nokia
